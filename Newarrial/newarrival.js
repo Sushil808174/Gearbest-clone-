@@ -1,20 +1,12 @@
-let bannerData=["https://uidesign.gbtcdn.com/GB/image/8823/PPC+1190X420+EN.jpg","https://uidesign.gbtcdn.com/GB/image/8823/1190X420.jpg",
-"https://uidesign.gbtcdn.com/GB/image/5502/1190x420.jpg?imbypass=true","https://uidesign.gbtcdn.com/GB/image/8823/en_1190x420.jpg?imbypass=true",
-"https://uidesign.gbtcdn.com/GB/image/8823/tools_1190X420_en.jpg","https://uidesign.gbtcdn.com/GB/image/8823/security_1190%C3%97420_en.jpg"]
-
-function randonBag(){
-    let banner=document.getElementById("banner");
-    banner.style.backgroundImage="url('https://uidesign.gbtcdn.com/GB/image/8823/PPC+1190X420+EN.jpg')"
-    let index=0;
-    setInterval(function(){
-        banner.style.backgroundImage=`url(${bannerData[index]})`
-        index+=1;
-        if(index>=bannerData.length){
-            index=0;
-        }
-    },3000);
-}
-randonBag()
+let Category=document.getElementById("Category");
+Category.addEventListener("mouseover", ()=>{
+    let banner=document.getElementById("banner-2");
+    banner.style.display="block"
+})
+document.body.addEventListener("click", ()=>{
+    let banner=document.getElementById("banner-2");
+    banner.style.display="none"
+})
 
 
 let recommendedData=[
@@ -160,7 +152,6 @@ let recommendedData=[
         sale:"Flash Sale"
     }
 ]
-
 
 let append=document.getElementById("append");
 function displayData(data){

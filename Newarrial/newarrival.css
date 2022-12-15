@@ -8,6 +8,10 @@ body{
 }
 #container{
     width: 100%;
+    margin:auto;
+}
+#navbar{
+    width: 80%;
     margin: auto;
 }
 #firsthead{
@@ -143,11 +147,14 @@ body{
     font-weight: bold;
     font-size: 16px;
 }
+.main a{
+    border-bottom: 4px solid rgb(255, 191, 0);
+}
 .color a:hover{
-    border-bottom: 5px solid black;
+    border-bottom: 4px solid rgb(255, 191, 0);
 }
 #banner{
-    width: 100%;
+    width: 80%;
     margin: auto;
     height: 56vh;
     /* background-color: rgb(0, 255, 81); */
@@ -186,11 +193,101 @@ body{
    font-weight: bolder;
 }
 
-/* main part */
-#click{
-    /* background-color: red; */
+.banner-1{
     width: 100%;
+    position: relative;
+    margin-top: 50px;
 }
+
+#newtext{
+    width: 80%;
+    margin:0 auto 40px;
+    text-align: center;
+    position: relative;
+}
+#new{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    box-sizing: border-box;
+}
+#new .four{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+#new h3{
+    margin-bottom: 10px;
+    padding: 0 15px;
+    font-weight: lighter;
+    color: black;
+}
+#new img{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+#new span{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.recommended{
+    width: 80%;
+    margin:35px auto;
+    box-sizing: border-box;
+}
+.recommended>.text{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+.recommended > #append{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.recommended > #append>a>div{
+    /* height: 350px; */
+    padding: 15px;
+    
+}
+.recommended>#append>a>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.recommended > #append>a>div>img{
+    width: 100%;
+    height: 70%;
+}
+.recommended > #append>a{
+    text-decoration: none;
+}
+.recommended > #append>a>div>p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    font-size: 15px;
+    margin: 8px 0;
+    color: black;
+}
+.recommended > #append>a>div>span{
+    font-size: 10px;
+    color: red;
+    padding: 3px;
+    background-color: rgba(255, 0, 0, 0.208);
+    margin: 10px 0;
+}
+.recommended > #append>a>div>h3{
+    color: red;
+}
+
+
 
 /* footer part */
 #footer{
