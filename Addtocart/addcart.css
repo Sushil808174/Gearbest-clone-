@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans,Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(210, 210, 210, 0.824);
+}
+.header{
+    width: 100%;
+    height: 70px;
+    /* border:1px solid red; */
+    background-color: white;
+}
+
+.nav{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 70%;
+}
+#cont{
+    width: 20px;
+}
+
+.nav .two:nth-child(2){
+    height: 30px;
+}
+
+/* midsection */
+.mid{
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: rgba(102, 102, 102, 0.815);
+}
+.mid .five:nth-child(1){
+    margin-right: 60px;
+}
+.mid .five:nth-child(2){
+    margin-left: 400px;
+}
+.mid .five:nth-child(3){
+    margin-left: 100px;
+}
+.mid .five:nth-child(4){
+    margin-left: 100px;
+}
+.mid .five:nth-child(5){
+    margin-left: 150px;
+}
+
+.nem{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    color: rgba(102, 102, 102, 0.829);
+}
+
+.data{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-top: 1px solid rgba(102, 102, 102, 0.585);
+}
+
+
+
+/* footer section */
+#footer{
+    width: 100%;
+    background-color: rgba(229, 229, 229, 0.702);
+    height: 550px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16%;
+}
+.signin span{
+    margin-left: 20px;
+    font-size: 30px;
+}
+#news{
+    font-size: 17px;
+}
+#input #email{
+    font-size: 20px;
+    padding: 8px;
+}
+#submit{
+    font-size: 20px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.footer-color{
+    width: 80%;
+    margin: auto;
+}
+#links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
+}
+#links>.four>a{
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    margin: 8px 0;
+    color: #666;
+}
+#links>.four>a:hover{
+    text-decoration: underline;
+}
+#complogo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+}

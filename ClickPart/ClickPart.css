@@ -9,6 +9,7 @@ body{
 #container{
     width: 100%;
     margin: auto;
+    height: 85vh;
 }
 #firsthead{
     width: 100%;
@@ -39,13 +40,15 @@ body{
     margin:0px auto;
     display: flex;
     height: 65px;
+    justify-content: space-between;
+    align-items: center;
 }
 #secondhead .three{
     width: 33%;
     margin: 2px;
 }
 #secondhead .three:nth-child(1){
-    width: 25%;
+    width: 20%;
 }
 
 #secondhead .three:nth-child(2){
@@ -54,13 +57,14 @@ body{
 #secondhead .three:nth-child(3){
     width: 30%;
 }
-#secondhead .three>#logo{
+#secondhead .three>a>#logo{
     width: 80%;
 }
 .search{
-    width: 100%;
-    height: 50%;
+    width: 90%;
+    height: 40px;
     margin-top: 30px;
+    margin-left: 20px;
     border: 2px solid rgb(255, 221, 0);
     border-radius: 20px;
     box-sizing: border-box;
@@ -97,6 +101,9 @@ body{
     font-size: 20px;
     width: 100%;
     color: rgba(183, 182, 182, 0.732);
+}
+#search:focus{
+    outline: none;
 }
 
 #search-icon>img{
@@ -188,9 +195,158 @@ body{
 
 /* main part */
 #click{
-    /* background-color: red; */
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin:40px auto;
+    display: flex;
+    box-sizing: border-box;
+
+}
+#click .twodiv:nth-child(1){
+    width: 40%;
+    height: 400px;
+    margin-right: 20px;
+}
+#click .twodiv:nth-child(2){
+    width: 60%;
+    margin-right: 0;
+    margin-left: 20px;
+    height: 400px;
+    margin-right: 20px;
+}
+#click div:nth-child(1)>.mainimg{
+    width: 100%;
+    height: 100%;
+}
+
+.twodiv>h2:nth-child(1){
+    height: 70px;
+    width: 100%;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.twodiv>h2:nth-child(2){
+    background-color: red;
+    display: flex;
+    font-weight: bolder;
+    font-size: 30px;
+    font-style: italic;
+    align-items: center;
+    color: white;
+    height: 70px;
     width: 100%;
 }
+
+.twodiv>h2:nth-child(3){
+    background-color: rgba(221, 216, 216, 0.511);
+    display: flex;
+    align-items: center;
+    color: red;
+    height: 70px;
+    width: 100%;
+}
+
+#btn{
+    width: 100%;
+    /* height: 60px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+#btn>button{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+    padding:10px 20px;
+    color: white;
+    font-weight: bolder; 
+    border: none;
+
+}
+
+#btn>button:nth-child(1){
+    background-color: red;
+    border: 2px solid red;
+}
+#btn>button:nth-child(1):hover{
+    background-color: rgb(204, 0, 0);
+}
+
+#btn>button:nth-child(3){
+    width: 130px;
+    height: 50px;
+    background-color: rgb(255, 200, 0);
+    padding:10px 20px ;
+}
+#btn>button:nth-child(3):hover{
+    background-color: rgb(212, 167, 3);
+}
+#btn>button>img{
+    width: 100%;
+    height: 100%;
+}
+#btn>button:nth-child(2){
+    background-color: rgba(255, 206, 206, 0.764);
+    color: red;
+    border: 2px solid red;
+    
+}
+#btn>button:nth-child(2):hover{
+    background-color: rgba(238, 162, 162, 0.764);
+
+
+}
+
+.qty{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.qty span:nth-child(1){
+    margin-right: 30px;
+}
+
+.qty span:nth-child(2){
+    border: 2px solid rgba(133, 133, 133, 0.663);
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.qty span:nth-child(3){
+    border-top: 2px solid rgba(133, 133, 133, 0.663);
+    border-bottom: 2px solid rgba(133, 133, 133, 0.663);
+    width: 30px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.qty span:nth-child(4){
+    border: 2px solid rgba(133, 133, 133, 0.663);
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.qty span:nth-child(5){
+    margin-left: 30px;
+}
+
+#shiping{
+    display: block;
+    margin: 20px 0;
+}
+#us{
+    display: block;
+    margin: 10px 0;
+    background-color: rgb(255, 217, 0);
+    padding: 3px 0;
+}
+
 
 /* footer part */
 #footer{
