@@ -1,12 +1,20 @@
-let Category=document.getElementById("Category");
-Category.addEventListener("mouseover", ()=>{
-    let banner=document.getElementById("banner-2");
-    banner.style.display="block"
-})
-document.body.addEventListener("click", ()=>{
-    let banner=document.getElementById("banner-2");
-    banner.style.display="none"
-})
+let bannerData=["https://uidesign.gbtcdn.com/GB/image/8823/PPC+1190X420+EN.jpg","https://uidesign.gbtcdn.com/GB/image/8823/1190X420.jpg",
+"https://uidesign.gbtcdn.com/GB/image/5502/1190x420.jpg?imbypass=true","https://uidesign.gbtcdn.com/GB/image/8823/en_1190x420.jpg?imbypass=true",
+"https://uidesign.gbtcdn.com/GB/image/8823/tools_1190X420_en.jpg","https://uidesign.gbtcdn.com/GB/image/8823/security_1190%C3%97420_en.jpg"]
+
+function randonBag(){
+    let banner=document.getElementById("banner");
+    banner.style.backgroundImage="url('https://uidesign.gbtcdn.com/GB/image/8823/PPC+1190X420+EN.jpg')"
+    let index=0;
+    setInterval(function(){
+        banner.style.backgroundImage=`url(${bannerData[index]})`
+        index+=1;
+        if(index>=bannerData.length){
+            index=0;
+        }
+    },2000);
+}
+randonBag()
 
 
 let recommendedData=[
@@ -153,11 +161,6 @@ let recommendedData=[
     }
 ]
 
-let pricesort=document.getElementById("pricesort");
-pricesort.addEventListener("click", ()=>{
-    recommendedData.sort((a,b)=>a.Price-b.Price);
-    displayData(recommendedData)
-})
 
 let append=document.getElementById("append");
 function displayData(data){
@@ -165,7 +168,7 @@ function displayData(data){
     let arr=[]
     data.forEach((element) => {
         let ancor=document.createElement("a");
-        ancor.setAttribute("href", "../ClickPart/ClickPart.html")
+        ancor.setAttribute("href", "click.html")
         let div=document.createElement("div");
         let image=document.createElement("img");
         image.setAttribute("src", element.Image)

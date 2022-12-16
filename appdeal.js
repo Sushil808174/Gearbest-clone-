@@ -153,13 +153,19 @@ let recommendedData=[
     }
 ]
 
+let pricesort=document.getElementById("pricesort");
+pricesort.addEventListener("click", ()=>{
+    recommendedData.sort((a,b)=>a.Price-b.Price);
+    displayData(recommendedData)
+})
+
 let append=document.getElementById("append");
 function displayData(data){
     append.innerHTML=null;
     let arr=[]
     data.forEach((element) => {
         let ancor=document.createElement("a");
-        ancor.setAttribute("href", "../ClickPart/ClickPart.html")
+        ancor.setAttribute("href", "click.html")
         let div=document.createElement("div");
         let image=document.createElement("img");
         image.setAttribute("src", element.Image)

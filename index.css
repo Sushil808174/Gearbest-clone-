@@ -9,10 +9,9 @@ body{
 #container{
     width: 100%;
     margin: auto;
-    height: 85vh;
 }
 #firsthead{
-    width: 100%;
+    width: 80%;
     height: 20px;
     margin: auto;
 }
@@ -36,35 +35,31 @@ body{
     height: 15px;
 }
 #secondhead{
-    width: 100%;
+    width: 80%;
     margin:0px auto;
     display: flex;
-    height: 65px;
-    justify-content: space-between;
-    align-items: center;
+    height: 70px;
 }
 #secondhead .three{
     width: 33%;
     margin: 2px;
 }
 #secondhead .three:nth-child(1){
-    width: 20%;
+    width: 30%;
 }
-
 #secondhead .three:nth-child(2){
     width: 40%;
 }
 #secondhead .three:nth-child(3){
     width: 30%;
 }
-#secondhead .three>a>#logo{
+#secondhead .three>#logo{
     width: 80%;
 }
 .search{
-    width: 90%;
-    height: 40px;
+    width: 100%;
+    height: 50%;
     margin-top: 30px;
-    margin-left: 20px;
     border: 2px solid rgb(255, 221, 0);
     border-radius: 20px;
     box-sizing: border-box;
@@ -76,7 +71,9 @@ body{
 .search div:nth-child(1){
     width: 10%;
 }
-
+.search div:nth-child(2){
+    width: 80%;
+}
 #search-icon{
     height: 100%;
     width: 10%;
@@ -88,18 +85,15 @@ body{
     right: 0;
     top: 0;
     border-radius: 0 20px 20px 0;
-}
-.input{
-    width: 70%;
+    cursor: pointer;
 }
 #search{
-    width: 100%;
-    font-size: 20px;
+    width: 70%;
+    font-size: 16px;
     border: none;
 }
 #search::placeholder{
-    font-size: 20px;
-    width: 100%;
+    font-size: 17px;
     color: rgba(183, 182, 182, 0.732);
 }
 #search:focus{
@@ -122,14 +116,14 @@ body{
    color: #666;
 }
 #thirddiv{
-    width: 100%;
-    /* background-color: rgb(255, 221, 0); */
+    width: 80%;
+    background-color: rgb(255, 221, 0);
     margin:5px auto 0;
     display: flex;
     align-items: center;
 }
 .deals:nth-child(1){
-    /* background-color: black; */
+    background-color: black;
     font-size: 18px;
     width: 17.6%;
     text-align: center;
@@ -137,7 +131,7 @@ body{
 }
 .deals:nth-child(1) a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 .color{
@@ -154,27 +148,22 @@ body{
     border-bottom: 5px solid black;
 }
 #banner{
-    width: 100%;
+    width: 80%;
     margin: auto;
     height: 56vh;
     /* background-color: rgb(0, 255, 81); */
     display: flex;
     position: relative;
-   
-    
-}
-#header{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* background-image: url("https://uidesign.gbtcdn.com/GB/image/8823/tools_1190X420_en.jpg"); */
+    background-size: cover;
 }
 #banner .banner-2{
-    width: 15%;
+    width: 17.6%;
     height: 100%;
-    background-color: rgb(246, 246, 246);
+    background-color: rgba(220, 219, 219, 0.768);
     padding:0 7px ;
     position:absolute;
     z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: none;
     /* padding-top: 5px; */
 }
 #banner .banner-2>a{
@@ -192,166 +181,87 @@ body{
    background-color: rgba(255, 255, 255, 0.708);
    font-weight: bolder;
 }
-
-/* main part */
-#click{
-    position: relative;
+/* banner-bottom */
+#banner-bottom{
     width: 80%;
-    height: 400px;
-    margin:40px auto;
-    display: flex;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
     box-sizing: border-box;
-
 }
-#click .twodiv:nth-child(1){
-    width: 40%;
-    height: 400px;
-    margin-right: 20px;
+#banner-bottom>div:nth-child(1){
+    box-sizing: border-box;
+    background-color:rgb(39, 23, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#click .twodiv:nth-child(2){
-    width: 60%;
-    margin-right: 0;
-    margin-left: 20px;
-    height: 400px;
-    margin-right: 20px;
-}
-#click div:nth-child(1)>.mainimg{
-    width: 100%;
-    height: 100%;
-}
-
-.twodiv>h2:nth-child(1){
-    height: 70px;
-    width: 100%;
-    color: black;
-    font-weight: bolder;
+#banner-bottom>div:nth-child(1)>div>span{
+    display: block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 20px;
+    color: goldenrod;
+    box-sizing: border-box;
 }
-
-.twodiv>h2:nth-child(2){
-    background-color: red;
-    display: flex;
-    font-weight: bolder;
-    font-size: 30px;
-    font-style: italic;
-    align-items: center;
-    color: white;
-    height: 70px;
+.recommended{
+    width: 80%;
+    margin:35px auto;
+    box-sizing: border-box;
+}
+.recommended>.text{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+.recommended > #append{
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
 }
-
-.twodiv>h2:nth-child(3){
-    background-color: rgba(221, 216, 216, 0.511);
-    display: flex;
-    align-items: center;
-    color: red;
-    height: 70px;
-    width: 100%;
-}
-
-#btn{
-    width: 100%;
-    /* height: 60px; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
-#btn>button{
-    font-size: 25px;
-    cursor: pointer;
-    margin-right: 30px;
-    padding:10px 20px;
-    color: white;
-    font-weight: bolder; 
-    border: none;
-
-}
-
-#btn>button:nth-child(1){
-    background-color: red;
-    border: 2px solid red;
-}
-#btn>button:nth-child(1):hover{
-    background-color: rgb(204, 0, 0);
-}
-
-#btn>button:nth-child(3){
-    width: 130px;
-    height: 50px;
-    background-color: rgb(255, 200, 0);
-    padding:10px 20px ;
-}
-#btn>button:nth-child(3):hover{
-    background-color: rgb(212, 167, 3);
-}
-#btn>button>img{
-    width: 100%;
-    height: 100%;
-}
-#btn>button:nth-child(2){
-    background-color: rgba(255, 206, 206, 0.764);
-    color: red;
-    border: 2px solid red;
+.recommended > #append>a>div{
+    height: 370px;
+    padding: 10px;
     
 }
-#btn>button:nth-child(2):hover{
-    background-color: rgba(238, 162, 162, 0.764);
-
-
+.recommended>#append>a>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-.qty{
+.recommended > #append>a>div>img{
     width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
+    height: 65%;
 }
-.qty span:nth-child(1){
-    margin-right: 30px;
+.recommended > #append>a{
+    text-decoration: none;
 }
-
-.qty span:nth-child(2){
-    border: 2px solid rgba(133, 133, 133, 0.663);
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    text-align: center;
+.recommended > #append>a>div>p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    font-size: 15px;
+    margin: 8px 0;
+    color: black;
 }
-.qty span:nth-child(3){
-    border-top: 2px solid rgba(133, 133, 133, 0.663);
-    border-bottom: 2px solid rgba(133, 133, 133, 0.663);
-    width: 30px;
-    height: 20px;
-    font-size: 20px;
-    text-align: center;
-}
-.qty span:nth-child(4){
-    border: 2px solid rgba(133, 133, 133, 0.663);
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    text-align: center;
-}
-.qty span:nth-child(5){
-    margin-left: 30px;
-}
-
-#shiping{
-    display: block;
-    margin: 20px 0;
-}
-#us{
-    display: block;
+.recommended > #append>a>div>span{
+    font-size: 10px;
+    color: red;
+    padding: 3px;
+    background-color: rgba(255, 0, 0, 0.208);
     margin: 10px 0;
-    background-color: rgb(255, 217, 0);
-    padding: 3px 0;
+}
+.recommended > #append>a>div>h3{
+    color: red;
 }
 
-
-/* footer part */
+/* footer */
 #footer{
     width: 100%;
-    margin-top: 20px;
     background-color: rgba(229, 229, 229, 0.702);
     height: 550px;
     box-sizing: border-box;
