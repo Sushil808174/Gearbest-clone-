@@ -9,7 +9,7 @@ body{
 #container{
     width: 100%;
     margin: auto;
-    height: 85vh;
+    /* height: 85vh; */
 }
 #firsthead{
     width: 100%;
@@ -156,7 +156,7 @@ body{
 #banner{
     width: 100%;
     margin: auto;
-    height: 56vh;
+    /* height: 56vh; */
     /* background-color: rgb(0, 255, 81); */
     display: flex;
     position: relative;
@@ -198,22 +198,22 @@ body{
 #click{
     position: relative;
     width: 80%;
-    height: 400px;
+    /* height: 400px; */
     margin:40px auto;
     display: flex;
     box-sizing: border-box;
 
 }
 #click .twodiv:nth-child(1){
-    width: 40%;
-    height: 400px;
+    width: 35%;
+    /* height: 400px; */
     margin-right: 20px;
 }
 #click .twodiv:nth-child(2){
     width: 60%;
     margin-right: 0;
     margin-left: 20px;
-    height: 400px;
+    /* height: 400px; */
     margin-right: 20px;
 }
 #click div:nth-child(1)>.mainimg{
@@ -226,7 +226,7 @@ body{
     width: 100%;
     color: black;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 .twodiv>h2:nth-child(2){
@@ -258,7 +258,7 @@ body{
     align-items: flex-end;
 }
 #btn>button{
-    font-size: 25px;
+    font-size: 1.3em;
     cursor: pointer;
     margin-right: 30px;
     padding:10px 20px;
@@ -392,7 +392,7 @@ body{
     padding: 8px;
 }
 #submit{
-    font-size: 20px;
+    font-size: 1.3em;
     padding: 8px;
     background-color: black;
     color: white;
@@ -423,4 +423,16 @@ body{
     justify-content: space-evenly;
     margin-top: 50px;
     align-items: center;
+}
+
+@media screen and (max-width:1000px){
+    #click{
+        position: relative;
+        width: 95%;
+        /* height: 400px; */
+        margin:40px auto;
+        display: flex;
+        box-sizing: border-box;
+    
+    }
 }

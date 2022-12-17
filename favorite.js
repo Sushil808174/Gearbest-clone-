@@ -22,6 +22,7 @@ function displayData(data) {
     let div1 = document.createElement("div");
     let image=document.createElement("img");
     image.setAttribute("src", element.Image);
+    ancor.append(image)
     let name=document.createElement("h3");
     name.setAttribute("id", "ellips")
     name.innerText=element.Product;
@@ -39,9 +40,8 @@ function displayData(data) {
       displayData(localData)
     })
 
-    div1.append(image,name,price,flash,Delete)
-    ancor.append(div1)
-    addData.append(ancor)
+    div1.append(ancor,name,price,flash,Delete)
+    addData.append(div1)
   });
 }
 

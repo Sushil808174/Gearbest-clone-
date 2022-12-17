@@ -51,6 +51,9 @@ body{
 }
 #secondhead .three:nth-child(1){
     width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #gear{
     width: 100%;
@@ -81,6 +84,7 @@ body{
 }
 .search div:nth-child(1){
     width: 10%;
+    font-size: 0.8em;
 }
 
 #search-icon{
@@ -101,7 +105,7 @@ body{
 }
 #search{
     width: 100%;
-    font-size: 16px;
+    font-size: 1em;
     border: none;
 }
 #search::placeholder{
@@ -137,7 +141,7 @@ body{
 }
 .deals:nth-child(1){
     /* background-color: black; */
-    font-size: 18px;
+    font-size: 1.1em;
     width: 17.6%;
     text-align: center;
     padding: 7.1px;
@@ -155,7 +159,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
 }
 .main a{
     border-bottom: 4px solid rgb(255, 191, 0);
@@ -192,7 +196,7 @@ body{
     display: block;
     height: 7.14%;
     width: 100%;
-    font-size: 13px;
+    font-size: 0.85em;
     text-align: center;
     text-decoration: none;
     color: black;
@@ -263,7 +267,7 @@ body{
 }
 #new span{
     color: red;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -293,7 +297,8 @@ body{
     margin-bottom: 10px;
 }
 .recommended > #append{
-    width: 80%;
+    width: 100%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
@@ -317,13 +322,13 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 200px;
-    font-size: 15px;
+    width: 125px;
+    font-size: 0.9em;
     margin: 8px 0;
     color: black;
 }
 .recommended > #append>a>div>span{
-    font-size: 10px;
+    font-size: 0.8em;
     color: red;
     padding: 3px;
     background-color: rgba(255, 0, 0, 0.208);
