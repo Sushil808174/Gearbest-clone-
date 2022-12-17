@@ -106,7 +106,7 @@ body{
     border: none;
 }
 #search::placeholder{
-    font-size: 17px;
+    font-size: 1em;
     width: 100%;
     color: rgba(183, 182, 182, 0.732);
 }
@@ -138,7 +138,7 @@ body{
 }
 .deals:nth-child(1){
     /* background-color: black; */
-    font-size: 18px;
+    font-size: 1.1em;
     width: 17.6%;
     text-align: center;
     padding: 7.1px;
@@ -156,7 +156,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
 }
 .main a{
     border-bottom: 4px solid rgb(255, 191, 0);
@@ -225,7 +225,7 @@ body{
     border-radius: 10px;
 }
 #newtext span{
-    font-size: 15px;
+    font-size: 1em;
     font-weight: lighter;
     box-sizing: border-box;
     margin: 10px;
@@ -234,7 +234,7 @@ body{
     color: black;
     font-size: bold;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 
@@ -265,12 +265,13 @@ body{
 }
 .recommended>.text{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25em;
     color: black;
     margin-bottom: 10px;
 }
 .recommended > #append{
-    width: 80%;
+    width: 100%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
@@ -294,8 +295,8 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 200px;
-    font-size: 15px;
+    width: 125px;
+    font-size: 0.9em;
     margin: 8px 0;
     color: black;
 }

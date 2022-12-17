@@ -317,3 +317,68 @@ body{
     margin-top: 50px;
     align-items: center;
 }
+
+@media screen and (max-width:1460px){
+    #firsthead{
+        width: 90%;
+    }
+    #secondhead{
+        width: 90%;
+        margin:0px auto;
+        
+    }
+    #thirddiv{
+        width: 90%;
+        background-color: rgb(255, 221, 0);
+        margin:5px auto 0;
+        display: flex;
+        align-items: center;
+    }
+    #banner-bottom{
+        width: 90%;
+        margin: 15px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        box-sizing: border-box;
+    }
+    .recommended{
+        width: 90%;
+        margin:35px auto;
+        box-sizing: border-box;
+    }
+
+    .recommended > #append{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    #banner-bottom>div:nth-child(1){
+        box-sizing: border-box;
+        background-color:rgb(39, 23, 6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    #banner-bottom{
+        width: 90%;
+        margin: 15px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        box-sizing: border-box;
+    }
+    #banner{
+        width: 90%;
+        margin: auto;
+        height: 56vh;
+        /* background-color: rgb(0, 255, 81); */
+        display: flex;
+        position: relative;
+        /* background-image: url("https://uidesign.gbtcdn.com/GB/image/8823/tools_1190X420_en.jpg"); */
+        background-size: cover;
+    }
+}

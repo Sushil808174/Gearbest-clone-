@@ -167,7 +167,7 @@ body{
 #banner{
     width: 80%;
     margin: auto;
-    height: 56vh;
+    /* height: 56vh; */
     /* background-color: rgb(0, 255, 81); */
     display: flex;
     position: relative;
@@ -176,6 +176,7 @@ body{
 }
 #header{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 }
 #banner .banner-2{
     width: 15%;
@@ -206,6 +207,7 @@ body{
 
 .banner-1{
     width: 100%;
+    margin: auto;
     position: relative;
     margin-top: 50px;
 }
@@ -217,6 +219,7 @@ body{
     position: relative;
 }
 #new{
+    
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
@@ -233,6 +236,7 @@ body{
     padding: 0 15px;
     font-weight: lighter;
     color: black;
+    font-size: 0.9em;
 }
 #new img{
     width: 50%;
@@ -241,7 +245,7 @@ body{
 }
 #new span{
     color: red;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -258,7 +262,8 @@ body{
     margin-bottom: 10px;
 }
 .recommended > #append{
-    width: 80%;
+    width: 100%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
@@ -282,8 +287,8 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 200px;
-    font-size: 15px;
+    width: 135px;
+    font-size: 1em;
     margin: 8px 0;
     color: black;
 }
