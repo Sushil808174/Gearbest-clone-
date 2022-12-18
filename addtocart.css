@@ -182,9 +182,9 @@ button{
 .payment .two .two-2>img{
     width: 100%;
 }
-.para:nth-child(1){
+/* .para:nth-child(1){ */
     /* margin-left: 250px; */
-}
+/* } */
 .para:nth-child(1)>p,strong{
     margin: 8px;
 }
